@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/success", "dest": "/success.html" },
+    { "src": "/privacy", "dest": "/privacy.html" },
+    { "src": "/terms",   "dest": "/terms.html" }
+  ]
+}

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>인문 100년 장학금 합격 전략 | 블루에듀</title>
+
+  <!-- SEO -->
+  <meta name="description" content="2023년 인문 100년 장학금 합격자가 직접 공개하는 자기소개서 전략. 합격 자소서 전문 + 논리 구조 해설 33페이지 PDF. 2026년 수강생도 합격!" />
+  <meta name="keywords" content="인문 100년 장학금, 인문100주년장학금, 외부장학금, 장학금 자기소개서, 장학금 합격전략, 대학생 장학금" />
+  <meta name="author" content="블루에듀" />
+
+  <!-- Open Graph (카카오·네이버 공유 썸네일) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="인문 100년 장학금 합격 전략 | 블루에듀" />
+  <meta property="og:description" content="합격자가 직접 공개하는 자기소개서 전략 PDF. 2023년 본인 합격 + 2026년 수강생 합격!" />
+  <meta property="og:url" content="https://bluedu.com" />
+
+  <style>
+    /* ── RESET & BASE ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ── VARIABLES ── */
+    :root {
+      --navy: #1B3A6B;
+      --blue: #2E6DB4;
+      --gold: #D4A843;
+      --light: #F4F8FF;
+      --gray: #666;
+      --lgray: #f0f0f0;
+      --radius: 12px;
+      --shadow: 0 4px 20px rgba(0,0,0,0.10);
+    }
+
+    /* ── UTILITIES ── */
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+    .btn-primary { background: var(--gold); color: #fff; }
+    .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+    .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-size: .78rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: .5px;
+    }
+    section { padding: 72px 0; }
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--navy);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--gray);
+      font-size: .95rem;
+      margin-bottom: 48px;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 14px 0;
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.3rem; font-weight: 900;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--gold); }
+    .header-cta {
+      background: var(--navy);
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, #2a4f8a 100%);
+      color: #fff;
+      padding: 80px 0 72px;
+      text-align: center;
+    }
+    .hero .tag { margin-bottom: 20px; }
+    .hero h1 {
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 900;
+      line-height: 1.35;
+      margin-bottom: 20px;
+      word-break: keep-all;
+    }
+    .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero p {
+      font-size: 1.05rem;
+      opacity: .88;
+      max-width: 560px;
+      margin: 0 auto 32px;
+      word-break: keep-all;
+    }
+    .hero-cta-wrap { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ── PROOF BAR ── */
+    .proof-bar {
+      background: var(--gold);
+      padding: 18px 0;
+      text-align: center;
+    }
+    .proof-bar p {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: .2px;
+    }
+
+    /* ── STATS ── */
+    .stats { background: var(--light); }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .stat-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 32px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .stat-card .num {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-card .num span { color: var(--gold); }
+    .stat-card p { font-size: .88rem; color: var(--gray); word-break: keep-all; }
+
+    /* ── PROBLEM ── */
+    .problem { background: #fff; }
+    .problem-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .problem-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      background: var(--lgray);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+    .problem-item .icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .problem-item p { font-size: .93rem; color: #444; word-break: keep-all; }
+
+    /* ── SOLUTION ── */
+    .solution { background: var(--light); }
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .solution-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--blue);
+    }
+    .solution-card h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .solution-card p { font-size: .88rem; color: var(--gray); word-break: keep-all; }
+
+    /* ── CONTENTS ── */
+    .contents { background: #fff; }
+    .contents-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .content-item {
+      display: flex; align-items: center; gap: 14px;
+      background: var(--light);
+      border-radius: 8px;
+      padding: 14px 18px;
+    }
+    .content-num {
+      width: 28px; height: 28px;
+      background: var(--navy);
+      color: #fff;
+      border-radius: 50%;
+      font-size: .8rem;
+      font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .content-item p { font-size: .9rem; color: #333; word-break: keep-all; }
+
+    /* ── PACKAGES ── */
+    .packages { background: var(--light); }
+    .pkg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+    .pkg-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      position: relative;
+      border: 2px solid transparent;
+      transition: border-color .2s;
+    }
+    .pkg-card.featured {
+      border-color: var(--gold);
+      transform: scale(1.04);
+    }
+    .pkg-card .badge {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: var(--gold);
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .pkg-name {
+      font-size: .82rem;
+      font-weight: 800;
+      color: var(--blue);
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .pkg-price {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 20px;
+      line-height: 1;
+    }
+    .pkg-price span { font-size: 1rem; }
+    .pkg-list {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+    .pkg-list li {
+      font-size: .88rem;
+      color: #444;
+      padding: 7px 0;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .pkg-list li::before { content: '✓'; color: var(--blue); font-weight: 800; flex-shrink: 0; }
+    .pkg-btn {
+      width: 100%;
+      padding: 14px;
+      border-radius: 50px;
+      font-size: .95rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .pkg-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
+    .pkg-btn-primary { background: var(--gold); color: #fff; }
+    .pkg-btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+
+    /* ── REVIEW ── */
+    .review { background: #fff; }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .review-card {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+    .review-stars { color: var(--gold); font-size: 1.1rem; margin-bottom: 12px; }
+    .review-text { font-size: .92rem; color: #333; margin-bottom: 16px; word-break: keep-all; line-height: 1.75; }
+    .review-author { font-size: .82rem; color: var(--gray); font-weight: 700; }
+
+    /* ── FAQ ── */
+    .faq { background: var(--light); }
+    .faq-list { max-width: 700px; margin: 0 auto; }
+    .faq-item {
+      background: #fff;
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      font-size: .97rem;
+      font-weight: 700;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-q .arrow {
+      font-size: 1.2rem;
+      transition: transform .2s;
+      flex-shrink: 0;
+    }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 24px 20px;
+      font-size: .9rem;
+      color: var(--gray);
+      word-break: keep-all;
+      line-height: 1.8;
+    }
+    .faq-a.show { display: block; }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      background: linear-gradient(135deg, var(--navy) 0%, #2a4f8a 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+    .final-cta h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 900;
+      margin-bottom: 16px;
+      word-break: keep-all;
+    }
+    .final-cta h2 em { color: var(--gold); font-style: normal; }
+    .final-cta p { opacity: .85; margin-bottom: 36px; word-break: keep-all; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 40px 0;
+      font-size: .82rem;
+      line-height: 2;
+    }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+    .footer-left p { color: #ccc; }
+    .footer-left .brand { font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: 6px; }
+    .footer-right { text-align: right; }
+    .footer-right a { color: #aaa; margin-left: 16px; }
+    .footer-right a:hover { color: #fff; }
+
+    /* ── MODAL ── */
+    .modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px 36px;
+      max-width: 480px;
+      width: 90%;
+      position: relative;
+    }
+    .modal h3 { font-size: 1.3rem; font-weight: 900; color: var(--navy); margin-bottom: 8px; }
+    .modal .modal-price { font-size: 1.6rem; font-weight: 900; color: var(--gold); margin-bottom: 20px; }
+    .modal-close {
+      position: absolute; top: 16px; right: 20px;
+      font-size: 1.4rem; cursor: pointer; color: #999;
+      background: none; border: none;
+    }
+    .modal input, .modal select {
+      width: 100%;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: .95rem;
+      margin-bottom: 12px;
+      font-family: inherit;
+      outline: none;
+    }
+    .modal input:focus, .modal select:focus { border-color: var(--blue); }
+    .modal .notice {
+      font-size: .8rem;
+      color: var(--gray);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .modal-pay-btn {
+      width: 100%;
+      padding: 16px;
+      border-radius: 50px;
+      background: var(--gold);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+    }
+    .modal-pay-btn:hover { opacity: .9; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .stats-grid { grid-template-columns: 1fr; }
+      .problem-list { grid-template-columns: 1fr; }
+      .solution-grid { grid-template-columns: 1fr; }
+      .contents-grid { grid-template-columns: 1fr; }
+      .pkg-grid { grid-template-columns: 1fr; }
+      .pkg-card.featured { transform: none; }
+      .review-grid { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; }
+      .footer-right { text-align: left; }
+      .footer-right a { margin-left: 0; margin-right: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="container header-inner">
+    <div class="logo">blue<span>edu</span></div>
+    <a href="#packages" class="header-cta">지금 신청하기</a>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="container">
+    <span class="tag">합격자 직접 공개</span>
+    <h1>
+      <em>인문 100년 장학금</em><br />
+      합격 자기소개서 전략을<br />
+      그대로 알려드립니다
+    </h1>
+    <p>
+      단순 후기가 아닙니다.<br />
+      합격 자소서 전문 + 작성 의도 + 논리 구조까지 33페이지로 해설합니다.
+    </p>
+    <div class="hero-cta-wrap">
+      <a href="#packages" class="btn btn-primary">패키지 보러가기</a>
+      <a href="#contents" class="btn btn-outline" style="color:#fff; border-color:#fff;">목차 확인하기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROOF BAR ── -->
+<div class="proof-bar">
+  <p>✅ 2023년 본인 직접 합격 &nbsp;|&nbsp; ✅ 2026년 수강생 1명 합격 &nbsp;|&nbsp; ✅ 만족도 100%</p>
+</div>
+
+<!-- ── STATS ── -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num"><span>2</span>명</div>
+        <p>직접 합격 + 수강생 합격<br />검증된 실전 전략</p>
+      </div>
+      <div class="stat-card">
+        <div class="num"><span>33</span>p</div>
+        <p>합격 자소서 전문 + 논리 해설<br />총 12개 섹션 구성</p>
+      </div>
+      <div class="stat-card">
+        <div class="num"><span>100</span>%</div>
+        <p>구매자 만족도<br />크몽 검증 완료</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROBLEM ── -->
+<section class="problem">
+  <div class="container">
+    <p class="tag" style="display:block; width:fit-content; margin: 0 auto 16px;">혹시 이런 고민 있으신가요?</p>
+    <h2 class="section-title">장학금, 막막하게 느껴지는 이유</h2>
+    <p class="section-sub">많은 대학생들이 아래 이유로 외부 장학금을 포기합니다</p>
+    <div class="problem-list">
+      <div class="problem-item">
+        <div class="icon">😓</div>
+        <p>인문 100년 장학금이 있다는 건 알겠는데 자기소개서를 어떻게 써야 할지 모르겠다</p>
+      </div>
+      <div class="problem-item">
+        <div class="icon">📄</div>
+        <p>인터넷에 합격 후기는 있는데 구체적인 자소서 내용이나 전략이 없다</p>
+      </div>
+      <div class="problem-item">
+        <div class="icon">🤔</div>
+        <p>전공 외 활동이나 경험이 있는데 이걸 장학금에 어떻게 연결해야 할지 모르겠다</p>
+      </div>
+      <div class="problem-item">
+        <div class="icon">⏰</div>
+        <p>공모 일정이 다가올 때마다 준비가 안 된 느낌에 결국 지원을 포기한다</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SOLUTION ── -->
+<section class="solution">
+  <div class="container">
+    <p class="tag" style="display:block; width:fit-content; margin: 0 auto 16px;">해결책</p>
+    <h2 class="section-title">이 전자책이 해결해드립니다</h2>
+    <p class="section-sub">추상적인 조언 대신, 실제 합격에 쓰인 전략 그대로를 공개합니다</p>
+    <div class="solution-grid">
+      <div class="solution-card">
+        <h3>합격 자기소개서 전문 공개</h3>
+        <p>심사를 통과한 실제 자소서를 그대로 수록합니다. 어떤 문장으로 썼는지 직접 확인하세요.</p>
+      </div>
+      <div class="solution-card">
+        <h3>작성 의도와 논리 구조 해설</h3>
+        <p>각 문단을 왜 그렇게 썼는지, 어떤 논리로 심사위원을 설득했는지 상세히 풀어드립니다.</p>
+      </div>
+      <div class="solution-card">
+        <h3>3개 문항 완전 분석</h3>
+        <p>지원 계기, 활동 경험, 향후 계획 — 3개 문항 전부를 예시·구조·해설로 완전 정복합니다.</p>
+      </div>
+      <div class="solution-card">
+        <h3>전공 무관 전략 수록</h3>
+        <p>인문학 전공이 아니어도 됩니다. 다양한 배경을 장학금과 연결하는 방법을 알려드립니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTENTS ── -->
+<section class="contents" id="contents">
+  <div class="container">
+    <h2 class="section-title">목차 구성</h2>
+    <p class="section-sub">33페이지 PDF, 총 12개 섹션으로 구성됩니다</p>
+    <div class="contents-grid">
+      <div class="content-item">
+        <div class="content-num">1</div>
+        <p>콘텐츠 소개 및 활용 방법</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">2</div>
+        <p>장학금 지원 계기 (배경 스토리 작성법)</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">3</div>
+        <p>1번 문항 — 합격 예시 전문 수록</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">4</div>
+        <p>1번 문항 — 논리 구조 해설</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">5</div>
+        <p>1번 문항 — 작성 의도 상세 분석</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">6</div>
+        <p>2번 문항 — 합격 예시 전문 수록</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">7</div>
+        <p>2번 문항 — 논리 구조 해설</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">8</div>
+        <p>2번 문항 — 작성 의도 상세 분석</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">9</div>
+        <p>3번 문항 — 합격 예시 전문 수록</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">10</div>
+        <p>3번 문항 — 논리 구조 해설</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">11</div>
+        <p>3번 문항 — 작성 의도 상세 분석</p>
+      </div>
+      <div class="content-item">
+        <div class="content-num">12</div>
+        <p>마무리 및 최종 점검 체크리스트</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PACKAGES ── -->
+<section class="packages" id="packages">
+  <div class="container">
+    <h2 class="section-title">패키지 선택</h2>
+    <p class="section-sub">모든 패키지에 33페이지 PDF가 포함됩니다</p>
+    <div class="pkg-grid">
+
+      <!-- STANDARD -->
+      <div class="pkg-card">
+        <p class="pkg-name">STANDARD</p>
+        <div class="pkg-price">10<span>만원</span></div>
+        <ul class="pkg-list">
+          <li>합격 자기소개서 전문 (33p PDF)</li>
+          <li>3개 문항 논리 구조 해설</li>
+          <li>작성 의도 상세 분석</li>
+          <li>구매 즉시 이메일 전달</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-outline" onclick="openModal('STANDARD', '100,000원', 100000)">구매하기</button>
+      </div>
+
+      <!-- DELUXE -->
+      <div class="pkg-card featured">
+        <span class="badge">가장 인기</span>
+        <p class="pkg-name">DELUXE</p>
+        <div class="pkg-price">15<span>만원</span></div>
+        <ul class="pkg-list">
+          <li>합격 자기소개서 전문 (33p PDF)</li>
+          <li>3개 문항 논리 구조 해설</li>
+          <li>작성 의도 상세 분석</li>
+          <li>구매 즉시 이메일 전달</li>
+          <li>1:1 코칭 2회 (카카오톡)</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-primary" onclick="openModal('DELUXE', '150,000원', 150000)">구매하기</button>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="pkg-card">
+        <p class="pkg-name">PREMIUM</p>
+        <div class="pkg-price">20<span>만원</span></div>
+        <ul class="pkg-list">
+          <li>합격 자기소개서 전문 (33p PDF)</li>
+          <li>3개 문항 논리 구조 해설</li>
+          <li>작성 의도 상세 분석</li>
+          <li>구매 즉시 이메일 전달</li>
+          <li>1:1 코칭 3회 (카카오톡)</li>
+          <li>2026년 합격 노하우 전수</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-outline" onclick="openModal('PREMIUM', '200,000원', 200000)">구매하기</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="review">
+  <div class="container">
+    <h2 class="section-title">수강생 후기</h2>
+    <p class="section-sub">실제 구매자들의 솔직한 이야기</p>
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          "자소서를 어떻게 써야 할지 막막했는데, 논리 구조를 이렇게 설명해주는 건 처음 봤어요.
+          단순히 예시만 주는 게 아니라 '왜 이렇게 썼는지'를 알려줘서 제 글에도 적용할 수 있었습니다."
+        </p>
+        <p class="review-author">2026년 인문 100년 장학생 선발 — ㅇ○○님</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          "인터넷에 후기는 많은데 실질적인 내용이 없어서 답답했어요.
+          이 PDF는 합격 자소서를 그대로 공개해줘서 레퍼런스로 정말 많이 참고했습니다. 강력 추천합니다."
+        </p>
+        <p class="review-author">경영학과 3학년 — ㅂ○○님</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq">
+  <div class="container">
+    <h2 class="section-title">자주 묻는 질문</h2>
+    <p class="section-sub">궁금한 점을 미리 확인하세요</p>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>구매 후 언제 PDF를 받을 수 있나요?</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">결제 완료 즉시 입력하신 이메일로 다운로드 링크가 발송됩니다. 보통 5분 이내에 도착하며, 메일이 오지 않으면 스팸함을 확인해주세요.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>전공이 인문학이 아니어도 괜찮을까요?</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">네, 괜찮습니다. 저 자신도 경영학 전공이고 작곡을 업으로 하는 상황에서 합격했습니다. PDF 안에 전공과 다른 배경을 장학금과 연결하는 방법을 별도로 수록해두었습니다.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>1:1 코칭은 어떻게 진행되나요?</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">DELUXE, PREMIUM 구매자 분들께는 구매 후 24시간 이내에 카카오톡으로 일정 안내 드립니다. 코칭은 카카오톡 채팅으로 진행되며, 자소서 첨삭 및 전략 상담 위주로 이루어집니다.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>환불이 가능한가요?</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">PDF 파일 특성상 다운로드 후에는 환불이 어렵습니다. 단, 파일 미열람 상태에서 구매 후 3일 이내에 문의 주시면 전액 환불해드립니다. 전자상거래법을 준수합니다.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>올해(2026년) 장학금 공모에 맞춰 쓸 수 있나요?</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="faq-a">네. 이 전자책은 2026년 공모 시즌에도 활용 가능하도록 최신 합격 전략을 기반으로 작성되었습니다. PREMIUM 패키지에는 2026년 수강생 합격 노하우가 추가로 수록되어 있습니다.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="final-cta">
+  <div class="container">
+    <h2>지금 바로 <em>합격 전략</em>을 확인하세요</h2>
+    <p>많은 학생들이 이미 이 전략으로 장학금을 받았습니다.<br />다음은 여러분의 차례입니다.</p>
+    <a href="#packages" class="btn btn-primary" style="font-size:1.1rem; padding: 18px 44px;">패키지 보러가기</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <p class="brand">블루에듀 (bluedu)</p>
+      <p>상호: 블루에듀 &nbsp;|&nbsp; 대표: 한윤수</p>
+      <p>사업자등록번호: 신청중</p>
+      <p>통신판매업 신고번호: 신청중</p>
+      <p>주소: 서울특별시 동대문구 외대역동로 63-27</p>
+      <p>이메일: hys7628@naver.com &nbsp;|&nbsp; 전화: 010-2566-8363</p>
+      <p style="margin-top:8px; color:#666; font-size:.78rem;">ⓒ 2026 블루에듀. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <a href="/privacy">개인정보처리방침</a>
+      <a href="/terms">이용약관</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── MODAL ── -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3 id="modal-pkg-name">STANDARD</h3>
+    <div class="modal-price" id="modal-price">100,000원</div>
+    <input type="text" id="buyer-name" placeholder="이름을 입력하세요" />
+    <input type="email" id="buyer-email" placeholder="이메일 주소 (PDF 전송용)" />
+    <input type="tel" id="buyer-phone" placeholder="연락처 (선택)" />
+    <p class="notice">
+      ※ 입력하신 이메일로 결제 완료 즉시 PDF가 발송됩니다.<br />
+      ※ 토스페이먼츠를 통해 안전하게 결제됩니다.
+    </p>
+    <button class="modal-pay-btn" onclick="requestPay()">결제하기</button>
+  </div>
+</div>
+
+<script>
+  // ── FAQ 토글 ──
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    btn.classList.toggle('open');
+    answer.classList.toggle('show');
+  }
+
+  // ── 모달 ──
+  let currentAmount = 100000;
+
+  function openModal(pkgName, price, amount) {
+    document.getElementById('modal-pkg-name').textContent = pkgName + ' 패키지';
+    document.getElementById('modal-price').textContent = price;
+    currentAmount = amount;
+    document.getElementById('modal').classList.add('show');
+  }
+
+  function closeModal() {
+    document.getElementById('modal').classList.remove('show');
+  }
+
+  document.getElementById('modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // ── 결제 (토스페이먼츠 연동 준비) ──
+  function requestPay() {
+    const name  = document.getElementById('buyer-name').value.trim();
+    const email = document.getElementById('buyer-email').value.trim();
+
+    if (!name)  { alert('이름을 입력해주세요.'); return; }
+    if (!email) { alert('이메일을 입력해주세요.'); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('올바른 이메일 주소를 입력해주세요.'); return;
+    }
+
+    // TODO: 토스페이먼츠 clientKey 발급 후 아래 코드 활성화
+    alert('결제 시스템 연동 준비 중입니다.\n카카오톡 또는 이메일로 문의해주세요.\nhys7628@naver.com');
+
+    /*
+    const tossPayments = TossPayments('YOUR_CLIENT_KEY');
+    tossPayments.requestPayment('카드', {
+      amount: currentAmount,
+      orderId: 'order_' + Date.now(),
+      orderName: document.getElementById('modal-pkg-name').textContent,
+      customerName: name,
+      customerEmail: email,
+      successUrl: window.location.origin + '/success',
+      failUrl: window.location.origin + '/fail',
+    });
+    */
+  }
+</script>
+
+</body>
+</html>
